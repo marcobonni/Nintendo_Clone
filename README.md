@@ -5,13 +5,13 @@ Questa è una mocking page della landing page di Nintendo. Qui sotto troverete t
 
 ### Naming: 
 - Nome in inglese 
-- Lettera Minuscola
+- Lettera minuscola
 - underscore tra una parola e l'altra 
 
 ## Branch Managment 
 
-Ogni vostra modfica deve avvenire tramite un branch a parte.
-Il branch di partenza sarà Develope.
+Ogni vostra modifica deve avvenire tramite un branch a parte.
+
 
 ## Pull Request Template
 
@@ -31,3 +31,6 @@ Per favore scrivere sulla descrizione della pull request, cercando di essere chi
 
 Stessa cosa per la pull request. Si applica il messaggio al commit dove si descrive cosa si è cambiato in quel commmit
 
+## Trello 
+
+https://trello.com/b/bysCvVVM

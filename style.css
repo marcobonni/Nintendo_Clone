@@ -8,5 +8,95 @@ body {
   display: flex;
   flex-direction: column;
 }
+body header.upper_header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+body header.upper_header .logo {
+  cursor: pointer;
+}
+body header.upper_header input {
+  cursor: pointer;
+  transition: 300ms;
+  border-bottom: #242424;
+}
+body header.upper_header select {
+  font-weight: bolder;
+  margin-right: auto;
+  cursor: pointer;
+  transition: 300ms;
+}
+body header.upper_header select:hover {
+  color: red;
+}
+body header.upper_header nav .nav_links {
+  list-style: none;
+}
+body header.upper_header nav .nav_links li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+body header.upper_header nav .nav_links li a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #242424;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+body header.upper_header nav .nav_links li a:hover {
+  color: red;
+}
+body header.lower_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+body header.lower_header nav ul li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+body header.lower_header nav ul li select {
+  font-weight: bolder;
+  color: #242424;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+body header.lower_header nav ul li select:hover {
+  color: red;
+}
+body header.lower_header nav ul li a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #242424;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+body header.lower_header nav ul li a:hover {
+  color: red;
+}
+body footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #242424;
+  color: white;
+}
+body footer nav ul {
+  list-style: none;
+}
+body footer nav ul li {
+  display: inline-block;
+  padding: 20px 20px;
+}
+body footer nav ul li a {
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+body footer nav ul li a:hover {
+  text-decoration-color: rgb(255, 255, 255);
+}
 
 /*# sourceMappingURL=style.css.map */
