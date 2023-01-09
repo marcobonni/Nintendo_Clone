@@ -12,6 +12,7 @@ Questa è una mocking page della landing page di Nintendo. Qui sotto troverete t
 
 Ogni vostra modifica deve avvenire tramite un branch a parte.
 
+
 ## Pull Request Template
 
 ### Descrizione
@@ -30,3 +31,6 @@ Per favore scrivere sulla descrizione della pull request, cercando di essere chi
 
 Stessa cosa per la pull request. Si applica il messaggio al commit dove si descrive cosa si è cambiato in quel commmit
 
+## Trello 
+
+https://trello.com/b/bysCvVVM
