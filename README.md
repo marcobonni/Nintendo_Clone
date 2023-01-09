@@ -5,12 +5,12 @@ Questa è una mocking page della landing page di Nintendo. Qui sotto troverete t
 
 ### Naming: 
 - Nome in inglese 
-- Lettera Minuscola
+- Lettera minuscola
 - underscore tra una parola e l'altra 
 
 ## Branch Managment 
 
-Ogni vostra modfica deve avvenire tramite un branch a parte.
+Ogni vostra modifica deve avvenire tramite un branch a parte.
 
 ## Pull Request Template
 
