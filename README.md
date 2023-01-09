@@ -11,6 +11,7 @@ Questa è una mocking page della landing page di Nintendo. Qui sotto troverete t
 ## Branch Managment 
 
 Ogni vostra modfica deve avvenire tramite un branch a parte.
+Il branch di partenza sarà Develope.
 
 ## Pull Request Template
 
