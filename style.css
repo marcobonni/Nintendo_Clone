@@ -107,6 +107,7 @@ body main .main_image section p {
   display: inline-block;
   font-weight: bold;
   font-size: 28px;
+}
 body main .main_image section a.preorder_button {
   display: inline;
   background-color: rgb(255, 0, 0);
@@ -116,7 +117,6 @@ body main .main_image section a.preorder_button {
   border-radius: 0.25rem;
   transition: background-color 300ms;
   padding: 1rem 2rem;
-
   margin-left: 1rem;
 }
 body main .main_image section a.preorder_button:hover {
@@ -188,7 +188,6 @@ body .feature_section .card_container .card a .text_card span {
 }
 
 footer {
-
   display: flex;
   justify-content: space-around;
   align-items: center;
