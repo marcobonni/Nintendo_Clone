@@ -2,6 +2,8 @@
   margin: 0px;
   border: 0px;
   box-sizing: border-box;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
 }
 
 body {
@@ -22,7 +24,7 @@ body header.upper_header input {
   border-bottom: #242424;
 }
 body header.upper_header select {
-  font-weight: bolder;
+  font-weight: 700;
   margin-right: auto;
   cursor: pointer;
   transition: 300ms;
@@ -38,7 +40,7 @@ body header.upper_header nav .nav_links li {
   padding: 20px 20px;
 }
 body header.upper_header nav .nav_links li a {
-  font-weight: bolder;
+  font-weight: 700;
   text-decoration: none;
   color: #242424;
   transition: all 0.3s ease 0s;
@@ -75,6 +77,47 @@ body header.lower_header nav ul li a {
 }
 body header.lower_header nav ul li a:hover {
   color: red;
+}
+body main .main_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 60px;
+}
+body main .main_image .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body main .main_image .image a img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+body main .main_image section {
+  padding: 24px 0px 48px;
+}
+body main .main_image section nav p {
+  color: #484848;
+  text-align: start;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 28px;
+}
+body main .main_image section nav a {
+  display: inline;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border-radius: 0.25rem;
+  transition: background-color 300ms;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+body main .main_image section nav a:hover {
+  background-color: rgb(200, 0, 0);
 }
 body footer {
   display: flex;
