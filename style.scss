@@ -92,6 +92,7 @@ body {
             flex-direction: column;
             justify-content: center;
             padding: 60px 60px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
             // align-items: center;
             .image {
                 display: flex;
@@ -107,33 +108,98 @@ body {
             }
             section {
                 padding: 24px 0px 48px;
-                nav {
-                // padding-top: 24px 0px;
-                p   {
-                    color: #484848;
-                    text-align: start;
-                    display: inline-block;
-                    font-weight: bold;
-                    font-size: 28px;
-                    }
-                a {
-                    display: inline;
-                    background-color: rgba(255, 0, 0, 1);
-                    color: white;
-                    font-weight: 700;
-                    font-size: 1.125rem;
-                    border-radius: 0.25rem;
-                    transition: background-color 300ms;
-                    padding: 1rem 2rem;
-                    text-decoration: none;
-                    margin-left: 1rem;
-                    &:hover {
-                        background-color: rgba(200, 0, 0, 1);
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                    p   {
+                            color: #484848;
+                            text-align: start;
+                            display: inline-block;
+                            font-weight: bold;
+                            font-size: 28px;
+                            }
+                    a.preorder_button {
+                            display: inline;
+                            background-color: rgba(255, 0, 0, 1);
+                            color: white;
+                            font-weight: 700;
+                            font-size: 1.125rem;
+                            border-radius: 0.25rem;
+                            transition: background-color 300ms;
+                            padding: 1rem 2rem;
+                            margin-left: 1rem;
+                            &:hover {
+                                background-color: rgba(200, 0, 0, 1);
+                                }
+                            }
+                        a {
+                            text-decoration: none;
+                            color: #242424;
+                            margin-left: auto;
+                            img {
+                                height: 72px;
+                                width: auto;
+                                }
+                            }    
+                        }
+            }
+            }
+        .feature_section {
+            padding-top: 48px;
+            border-bottom: #484848 1px solid;
+            h1 {
+                font-size: 2.75rem;
+                color: #484848;
+                margin: 2rem;
+            }
+            .card_container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 10px;
+                .card {
+                    height: 100%;
+                    margin: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+                    border: 1px solid #484848;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    a {
+                        text-decoration: none;
+                    img {
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        box-sizing: content-box;
+                        height: 100%;
+                        width: 100%;
+                        transition: transform 300ms;
+                        &:hover {
+                            transform: translate(0px, -10px);
                         }
                     }
+                    .text_card {
+                        padding-left: 16px;
+                        h3 {
+                            font-size: 1rem;
+                            font-weight: 700;
+                            margin-top: 1em;
+                            margin-bottom: 1em;
+                            transition: 300ms;
+                            color: black;
+                            &:hover {
+                                color: red;
+                            }
+                        }
+                        span {
+                            color: #484848;
+                        }
                     }
+                }
+                }
             }
-            }
+        }
         }
     footer {
         display: flex;
@@ -159,4 +225,4 @@ body {
                 }
             }
         }
-    }
+    
