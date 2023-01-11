@@ -78,36 +78,36 @@ body header.lower_header nav ul li a {
 body header.lower_header nav ul li a:hover {
   color: red;
 }
-body main .main_image {
+body main .main_image, body main .online_store_section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 60px 60px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-body main .main_image .image {
+body main .main_image .image, body main .online_store_section .image {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-body main .main_image .image a img {
+body main .main_image .image a img, body main .online_store_section .image a img {
   width: 100%;
   border-radius: 0.25rem;
 }
-body main .main_image section {
+body main .main_image section, body main .online_store_section section {
   padding: 24px 0px 48px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-body main .main_image section p {
+body main .main_image section p, body main .online_store_section section p {
   color: #484848;
   text-align: start;
   display: inline-block;
   font-weight: bold;
   font-size: 28px;
-body main .main_image section a.preorder_button {
+body main .main_image section a.preorder_button, body main .online_store_section section a.preorder_button {
   display: inline;
   background-color: rgb(255, 0, 0);
   color: white;
@@ -116,24 +116,23 @@ body main .main_image section a.preorder_button {
   border-radius: 0.25rem;
   transition: background-color 300ms;
   padding: 1rem 2rem;
-
   margin-left: 1rem;
 }
-body main .main_image section a.preorder_button:hover {
+body main .main_image section a.preorder_button:hover, body main .online_store_section section a.preorder_button:hover {
   background-color: rgb(200, 0, 0);
 }
-body main .main_image section a {
+body main .main_image section a, body main .online_store_section section a {
   text-decoration: none;
   color: #242424;
   margin-left: auto;
 }
-body main .main_image section a img {
+body main .main_image section a img, body main .online_store_section section a img {
   height: 72px;
   width: auto;
 }
 body .feature_section {
   padding-top: 48px;
-  border-bottom: #484848 1px solid;
+  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
 }
 body .feature_section h1 {
   font-size: 2.75rem;
@@ -186,9 +185,19 @@ body .feature_section .card_container .card a .text_card h3:hover {
 body .feature_section .card_container .card a .text_card span {
   color: #484848;
 }
+.online_store_section h1 {
+  font-size: 2.75rem;
+  color: #484848;
+  margin: 2rem;
+}
+.online_store_section a img {
+  width: 100%;
+}
+.online_store_section p {
+  font-size: 21px;
+}
 
 footer {
-
   display: flex;
   justify-content: space-around;
   align-items: center;
