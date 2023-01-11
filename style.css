@@ -107,10 +107,8 @@ body main .main_image section p, body main .online_store_section section p {
   display: inline-block;
   font-weight: bold;
   font-size: 28px;
-
 }
-body main .main_image section a.preorder_button {
-
+body main .main_image section a.preorder_button, body main .online_store_section section a.preorder_button {
   display: inline;
   background-color: rgb(255, 0, 0);
   color: white;
@@ -133,22 +131,22 @@ body main .main_image section a img, body main .online_store_section section a i
   height: 72px;
   width: auto;
 }
-body .feature_section {
+body main .feature_section {
   padding-top: 48px;
-  border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+  border-bottom: #484848 1px solid;
 }
-body .feature_section h1 {
+body main .feature_section h1 {
   font-size: 2.75rem;
   color: #484848;
   margin: 2rem;
 }
-body .feature_section .card_container {
+body main .feature_section .card_container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 10px;
 }
-body .feature_section .card_container .card {
+body main .feature_section .card_container .card {
   height: 100%;
   margin: 10px;
   display: flex;
@@ -157,10 +155,10 @@ body .feature_section .card_container .card {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-body .feature_section .card_container .card a {
+body main .feature_section .card_container .card a {
   text-decoration: none;
 }
-body .feature_section .card_container .card a img {
+body main .feature_section .card_container .card a img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   box-sizing: content-box;
@@ -168,13 +166,13 @@ body .feature_section .card_container .card a img {
   width: 100%;
   transition: transform 300ms;
 }
-body .feature_section .card_container .card a img:hover {
+body main .feature_section .card_container .card a img:hover {
   transform: translate(0px, -10px);
 }
-body .feature_section .card_container .card a .text_card {
+body main .feature_section .card_container .card a .text_card {
   padding-left: 16px;
 }
-body .feature_section .card_container .card a .text_card h3 {
+body main .feature_section .card_container .card a .text_card h3 {
   font-size: 1rem;
   font-weight: 700;
   margin-top: 1em;
@@ -182,26 +180,24 @@ body .feature_section .card_container .card a .text_card h3 {
   transition: 300ms;
   color: black;
 }
-body .feature_section .card_container .card a .text_card h3:hover {
+body main .feature_section .card_container .card a .text_card h3:hover {
   color: red;
 }
-body .feature_section .card_container .card a .text_card span {
+body main .feature_section .card_container .card a .text_card span {
   color: #484848;
 }
-.online_store_section h1 {
+body main .online_store_section h1 {
   font-size: 2.75rem;
   color: #484848;
   margin: 2rem;
 }
-.online_store_section a img {
+body main .online_store_section a img {
   width: 100%;
 }
-.online_store_section p {
+body main .online_store_section p {
   font-size: 21px;
 }
-
-
-.navbar_socialmedia {
+body .navbar_socialmedia {
   background-color: #e60012;
   height: 120.234px;
   width: 100%;
@@ -211,12 +207,12 @@ body .feature_section .card_container .card a .text_card span {
   align-items: center;
   padding: 36px 16px 36px 16px;
 }
-.navbar_socialmedia .nin_logo-left {
+body .navbar_socialmedia .nin_logo-left {
   justify-content: flex-start !important;
   display: flex !important;
   margin-left: 20px;
 }
-.navbar_socialmedia .social_icon a {
+body .navbar_socialmedia .social_icon a {
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -225,119 +221,80 @@ body .feature_section .card_container .card a .text_card span {
   cursor: pointer;
   padding: 32px;
 }
-
-.footer_info {
+body .footer_info {
   padding: 16px;
   display: flex;
   margin: 20px 100px 100px 100px;
   justify-content: space-between;
 }
-.footer_info .col-1 .about {
+body .footer_info .col-1 .about {
   border-left: 1px solid #dadada;
   padding: 0 0 0 24px;
   margin-bottom: 200px;
   height: auto;
 }
-.footer_info .col-1 #about_nintendo {
+body .footer_info .col-1 #about_nintendo {
   font-size: 18px;
   color: #242424;
   text-decoration: none;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.footer_info .col-1 #about_nintendo:hover {
+body .footer_info .col-1 #about_nintendo:hover {
   text-decoration: underline;
 }
-.footer_info .col-1 #careers,
-.footer_info .col-1 #corporate {
+body .footer_info .col-1 #careers,
+body .footer_info .col-1 #corporate {
   font-size: 16px;
   text-decoration: none;
   color: #e60012;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.footer_info .col-1 #careers:hover,
-.footer_info .col-1 #corporate:hover {
+body .footer_info .col-1 #careers:hover,
+body .footer_info .col-1 #corporate:hover {
   text-decoration: underline;
 }
-
-.col-2 .shop_info {
+body .col-2 .shop_info {
   border-left: 1px solid #dadada;
   padding: 0 0 0 24px;
   margin-bottom: 200px;
   height: auto;
 }
-.col-2 #shop {
+body .col-2 #shop {
   font-size: 18px;
   color: #242424;
   text-decoration: none;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.col-2 #shop:hover {
+body .col-2 #shop:hover {
   text-decoration: underline;
 }
-.col-2 #games,
-.col-2 #hardware,
-.col-2 #merchandise,
-.col-2 #sales,
-.col-2 #exclusives,
-.col-2 #online,
-.col-2 #store {
+body .col-2 #games,
+body .col-2 #hardware,
+body .col-2 #merchandise,
+body .col-2 #sales,
+body .col-2 #exclusives,
+body .col-2 #online,
+body .col-2 #store {
   font-size: 16px;
   text-decoration: none;
   color: #e60012;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.col-2 #games:hover,
-.col-2 #hardware:hover,
-.col-2 #merchandise:hover,
-.col-2 #sales:hover,
-.col-2 #exclusives:hover,
-.col-2 #online:hover,
-.col-2 #store:hover {
+body .col-2 #games:hover,
+body .col-2 #hardware:hover,
+body .col-2 #merchandise:hover,
+body .col-2 #sales:hover,
+body .col-2 #exclusives:hover,
+body .col-2 #online:hover,
+body .col-2 #store:hover {
   text-decoration: underline;
   color: rgb(129, 7, 7);
 }
-
-.col-3 .store_info {
-  padding: 0 0 0 24px;
-  margin-bottom: 200px;
-  height: auto;
-  border-left: 1px solid #dadada;
-  padding: 0 0 0 24px;
-  height: auto;
-}
-.col-3 #store {
-  font-size: 18px;
-  color: #242424;
-  text-decoration: none;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-.col-3 #store:hover {
-  text-decoration: underline;
-}
-.col-3 #order,
-.col-3 #shipping,
-.col-3 #returns,
-.col-3 #faq {
-  font-size: 16px;
-  text-decoration: none;
-  color: #e60012;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-.col-3 #order:hover,
-.col-3 #shipping:hover,
-.col-3 #returns:hover,
-.col-3 #faq:hover {
-  text-decoration: underline;
-  color: rgb(129, 7, 7);
-}
-
-.col-4 .support_info {
+body .col-3 .store_info {
   padding: 0 0 0 24px;
   margin-bottom: 200px;
   height: auto;
@@ -345,148 +302,178 @@ body .feature_section .card_container .card a .text_card span {
   padding: 0 0 0 24px;
   height: auto;
 }
-.col-4 #support {
+body .col-3 #store {
   font-size: 18px;
   color: #242424;
   text-decoration: none;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.col-4 #support:hover {
+body .col-3 #store:hover {
   text-decoration: underline;
 }
-.col-4 #nintendo_switch,
-.col-4 #account,
-.col-4 #systems,
-.col-4 #repairs,
-.col-4 #recycling {
+body .col-3 #order,
+body .col-3 #shipping,
+body .col-3 #returns,
+body .col-3 #faq {
   font-size: 16px;
   text-decoration: none;
   color: #e60012;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.col-4 #nintendo_switch:hover,
-.col-4 #account:hover,
-.col-4 #systems:hover,
-.col-4 #repairs:hover,
-.col-4 #recycling:hover {
+body .col-3 #order:hover,
+body .col-3 #shipping:hover,
+body .col-3 #returns:hover,
+body .col-3 #faq:hover {
   text-decoration: underline;
   color: rgb(129, 7, 7);
 }
-
-.col-5 .parents {
+body .col-4 .support_info {
+  padding: 0 0 0 24px;
+  margin-bottom: 200px;
+  height: auto;
+  border-left: 1px solid #dadada;
+  padding: 0 0 0 24px;
+  height: auto;
+}
+body .col-4 #support {
+  font-size: 18px;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+body .col-4 #support:hover {
+  text-decoration: underline;
+}
+body .col-4 #nintendo_switch,
+body .col-4 #account,
+body .col-4 #systems,
+body .col-4 #repairs,
+body .col-4 #recycling {
+  font-size: 16px;
+  text-decoration: none;
+  color: #e60012;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+body .col-4 #nintendo_switch:hover,
+body .col-4 #account:hover,
+body .col-4 #systems:hover,
+body .col-4 #repairs:hover,
+body .col-4 #recycling:hover {
+  text-decoration: underline;
+  color: rgb(129, 7, 7);
+}
+body .col-5 .parents {
   border-left: 1px solid #dadada;
   padding: 0 0 0 24px;
 }
-.col-5 #parent {
+body .col-5 #parent {
   font-size: 18px;
   color: #242424;
   text-decoration: none;
   font-weight: 700;
 }
-.col-5 #parent:hover {
+body .col-5 #parent:hover {
   text-decoration: underline;
 }
-.col-5 #info,
-.col-5 #parental {
+body .col-5 #info,
+body .col-5 #parental {
   font-size: 16px;
   text-decoration: none;
   color: #e60012;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.col-5 #info:hover,
-.col-5 #parental:hover {
+body .col-5 #info:hover,
+body .col-5 #parental:hover {
   text-decoration: underline;
   color: rgb(129, 7, 7);
 }
-.col-5 .privacy_info {
+body .col-5 .privacy_info {
   border-left: 1px solid #dadada;
   padding: 0 0 0 24px;
   margin-bottom: 200px;
   height: auto;
 }
-.col-5 .privacy_info #privacy {
+body .col-5 .privacy_info #privacy {
   font-size: 18px;
   color: #242424;
   text-decoration: none;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.col-5 .privacy_info #privacy:hover {
+body .col-5 .privacy_info #privacy:hover {
   text-decoration: underline;
 }
-.col-5 #policy,
-.col-5 #cookies {
+body .col-5 #policy,
+body .col-5 #cookies {
   font-size: 16px;
   text-decoration: none;
   color: #e60012;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.col-5 #policy:hover,
-.col-5 #cookies:hover {
+body .col-5 #policy:hover,
+body .col-5 #cookies:hover {
   text-decoration: underline;
   color: rgb(129, 7, 7);
 }
-
-.col-6 .community_info {
+body .col-6 .community_info {
   border-left: 1px solid #dadada;
   padding: 0 0 0 24px;
   height: auto;
   margin-bottom: auto;
 }
-.col-6 #community {
+body .col-6 #community {
   font-size: 18px;
   color: #242424;
   text-decoration: none;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.col-6 #community:hover {
+body .col-6 #community:hover {
   text-decoration: underline;
 }
-.col-6 #guidelines,
-.col-6 #safety {
+body .col-6 #guidelines,
+body .col-6 #safety {
   font-size: 16px;
   text-decoration: none;
   color: #e60012;
   font-weight: 700;
   margin-bottom: 50px;
 }
-.col-6 #guidelines:hover,
-.col-6 #safety:hover {
+body .col-6 #guidelines:hover,
+body .col-6 #safety:hover {
   text-decoration: underline;
   color: rgb(129, 7, 7);
 }
-
-.esrb_logo {
+body .esrb_logo {
   display: flex;
   justify-content: flex-end;
 }
-
-
-footer {
+body footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #242424;
   color: white;
 }
-footer nav ul {
+body footer nav ul {
   list-style: none;
 }
-footer nav ul li {
+body footer nav ul li {
   display: inline-block;
   padding: 20px 20px;
 }
-footer nav ul li a {
+body footer nav ul li a {
   color: inherit;
   text-decoration: underline 0.15em rgba(255, 255, 255, 0);
   transition: text-decoration-color 300ms;
 }
-footer nav ul li a:hover {
+body footer nav ul li a:hover {
   text-decoration-color: rgb(255, 255, 255);
 }
 

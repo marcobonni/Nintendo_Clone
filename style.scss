@@ -170,9 +170,8 @@ body {
 
             }
         }
-    }
-
-    .feature_section {
+    
+        .feature_section {
         padding-top: 48px;
         border-bottom: #484848 1px solid;
 
@@ -238,7 +237,23 @@ body {
             }
         }
     }
+    .online_store_section {
+        @extend .main_image;
+        h1 {
+            font-size: 2.75rem;
+            color: #484848;
+            margin: 2rem;
+        }
+        a {
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            font-size: 21px; //not working. viene sovrascritto da extend
+        }
 }
+    }
 
 
 .navbar_socialmedia {
@@ -615,4 +630,5 @@ footer {
             }
         }
     }
+}
 }
