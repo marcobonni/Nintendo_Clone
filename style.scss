@@ -5,16 +5,20 @@
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 14px;
 }
+
 body {
     display: flex;
     flex-direction: column;
+
     header.upper_header {
         display: flex;
         justify-content: space-between;
         align-content: center;
+
         .logo {
             cursor: pointer;
         }
+
         input {
             cursor: pointer;
             transition: 300ms;
@@ -23,60 +27,72 @@ body {
             //     border-bottom: red;
             // }
         }
+
         select {
             font-weight: 700;
             margin-right: auto;
             cursor: pointer;
             transition: 300ms;
+
             &:hover {
                 color: red;
             }
         }
+
         nav {
             .nav_links {
                 list-style: none;
-                    li {
-                        display: inline-block;
-                        padding: 20px 20px;
-                        a {
-                            font-weight: 700;
-                            text-decoration: none;
-                            color: #242424;
-                            transition: all 0.3s ease 0s;
-                            cursor: pointer;
-                            &:hover {
-                                color: red;
-                                }
-                            }
+
+                li {
+                    display: inline-block;
+                    padding: 20px 20px;
+
+                    a {
+                        font-weight: 700;
+                        text-decoration: none;
+                        color: #242424;
+                        transition: all 0.3s ease 0s;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: red;
                         }
                     }
+                }
             }
         }
+    }
+
     header.lower_header {
         display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid rgba(0, 0, 0, 0.2);
+
         nav {
             ul {
                 li {
                     display: inline-block;
                     padding: 20px 20px;
+
                     select {
                         font-weight: bolder;
                         color: #242424;
                         transition: all 0.3s ease 0s;
                         cursor: pointer;
+
                         &:hover {
                             color: red;
                         }
                     }
+
                     a {
                         font-weight: bolder;
                         text-decoration: none;
                         color: #242424;
                         transition: all 0.3s ease 0s;
                         cursor: pointer;
+
                         &:hover {
                             color: red;
                         }
@@ -86,19 +102,22 @@ body {
 
         }
     }
+
     main {
         .main_image {
             display: flex;
             flex-direction: column;
             justify-content: center;
             padding: 60px 60px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
             // align-items: center;
             .image {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
+
                 a {
                     img {
                         width: 100%;
@@ -106,68 +125,80 @@ body {
                     }
                 }
             }
+
             section {
                 padding: 24px 0px 48px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                    p   {
-                            color: #484848;
-                            text-align: start;
-                            display: inline-block;
-                            font-weight: bold;
-                            font-size: 28px;
-                            }
-                    a.preorder_button {
-                            display: inline;
-                            background-color: rgba(255, 0, 0, 1);
-                            color: white;
-                            font-weight: 700;
-                            font-size: 1.125rem;
-                            border-radius: 0.25rem;
-                            transition: background-color 300ms;
-                            padding: 1rem 2rem;
-                            margin-left: 1rem;
-                            &:hover {
-                                background-color: rgba(200, 0, 0, 1);
-                                }
-                            }
-                        a {
-                            text-decoration: none;
-                            color: #242424;
-                            margin-left: auto;
-                            img {
-                                height: 72px;
-                                width: auto;
-                                }
-                            }    
-                        }
+
+                p {
+                    color: #484848;
+                    text-align: start;
+                    display: inline-block;
+                    font-weight: bold;
+                    font-size: 28px;
+                }
+
+                a.preorder_button {
+                    display: inline;
+                    background-color: rgba(255, 0, 0, 1);
+                    color: white;
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    border-radius: 0.25rem;
+                    transition: background-color 300ms;
+                    padding: 1rem 2rem;
+                    margin-left: 1rem;
+
+                    &:hover {
+                        background-color: rgba(200, 0, 0, 1);
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #242424;
+                    margin-left: auto;
+
+                    img {
+                        height: 72px;
+                        width: auto;
+                    }
+                }
             }
-            }
-        .feature_section {
-            padding-top: 48px;
-            border-bottom: #484848 1px solid;
-            h1 {
-                font-size: 2.75rem;
-                color: #484848;
-                margin: 2rem;
-            }
-            .card_container {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
+        }
+    }
+
+    .feature_section {
+        padding-top: 48px;
+        border-bottom: #484848 1px solid;
+
+        h1 {
+            font-size: 2.75rem;
+            color: #484848;
+            margin: 2rem;
+        }
+
+        .card_container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px;
+
+            .card {
+                height: 100%;
                 margin: 10px;
-                .card {
-                    height: 100%;
-                    margin: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    // justify-content: space-around;
-                    border: 1px solid #484848;
-                    border-top-left-radius: 10px;
-                    border-top-right-radius: 10px;
-                    a {
-                        text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-around;
+                border: 1px solid #484848;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
+                a {
+                    text-decoration: none;
+
                     img {
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
@@ -175,12 +206,15 @@ body {
                         height: 100%;
                         width: 100%;
                         transition: transform 300ms;
+
                         &:hover {
                             transform: translate(0px, -10px);
                         }
                     }
+
                     .text_card {
                         padding-left: 16px;
+
                         h3 {
                             font-size: 1rem;
                             font-weight: 700;
@@ -188,41 +222,393 @@ body {
                             margin-bottom: 1em;
                             transition: 300ms;
                             color: black;
+
                             &:hover {
                                 color: red;
                             }
                         }
+
                         span {
                             color: #484848;
                         }
                     }
                 }
-                }
             }
         }
+    }
+}
+
+
+.navbar_socialmedia {
+    background-color: #e60012;
+    height: 120.234px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 16px 36px 16px;
+
+
+    .nin_logo-left {
+        justify-content: flex-start !important;
+        display: flex !important;
+        margin-left: 20px;
+    }
+
+
+    .social_icon {
+        a {
+
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            overflow: hidden;
+            font-size: 32px;
+            cursor: pointer;
+            padding: 32px;
         }
-    footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #242424;
-        color: white;
-        nav {
-            ul {
-                list-style:none;
-                li {
-                    display: inline-block;
-                    padding: 20px 20px;
-                    a {
-                        color: inherit; 
-                        text-decoration: underline 0.15em rgba(255, 255, 255, 0);
-                        transition: text-decoration-color 300ms;
-                          &:hover {
-                            text-decoration-color: rgba(255, 255, 255, 1);
-                          }
-                        }
+    }
+}
+
+.footer_info {
+    padding: 16px;
+    display: flex;
+    margin: 20px 100px 100px 100px;
+    justify-content: space-between;
+
+    .col-1 {
+        .about {
+            border-left: 1px solid #dadada;
+            padding: 0 0 0 24px;
+            margin-bottom: 200px;
+            height: auto;
+
+        }
+
+        #about_nintendo {
+            font-size: 18px;
+            color: #242424;
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+
+        #about_nintendo:hover {
+            text-decoration: underline;
+
+        }
+
+
+        #careers,
+        #corporate {
+            font-size: 16px;
+            text-decoration: none;
+            color: #e60012;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+
+        #careers:hover,
+        #corporate:hover {
+            text-decoration: underline;
+
+        }
+
+
+    }
+}
+
+.col-2 {
+    .shop_info {
+        border-left: 1px solid #dadada;
+        padding: 0 0 0 24px;
+        margin-bottom: 200px;
+        height: auto;
+
+    }
+
+    #shop {
+        font-size: 18px;
+        color: #242424;
+        text-decoration: none;
+        font-weight: 700;
+        margin-bottom: 50px;
+
+    }
+
+    #shop:hover {
+        text-decoration: underline;
+
+    }
+
+    #games,
+    #hardware,
+    #merchandise,
+    #sales,
+    #exclusives,
+    #online,
+    #store {
+        font-size: 16px;
+        text-decoration: none;
+        color: #e60012;
+        font-weight: 700;
+        margin-bottom: 50px;
+       
+
+    }
+
+    #games:hover,
+    #hardware:hover,
+    #merchandise:hover,
+    #sales:hover,
+    #exclusives:hover,
+    #online:hover,
+    #store:hover {
+        text-decoration: underline;
+        color:rgb(129, 7, 7);
+    }
+    }
+
+
+.col-3 {
+    .store_info {
+        padding: 0 0 0 24px;
+        margin-bottom: 200px;
+        height: auto;
+        border-left: 1px solid #dadada;
+        padding: 0 0 0 24px;
+        height: auto;
+    }
+
+    #store {
+        font-size: 18px;
+        color: #242424;
+        text-decoration: none;
+        font-weight: 700;
+        margin-bottom: 50px;
+
+    }
+
+    #store:hover {
+        text-decoration: underline;
+    }
+
+    #order,
+    #shipping,
+    #returns,
+    #faq {
+        font-size: 16px;
+        text-decoration: none;
+        color: #e60012;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    #order:hover,
+    #shipping:hover,
+    #returns:hover,
+    #faq:hover {
+        text-decoration: underline;
+        color:rgb(129, 7, 7);
+    }
+}
+
+
+.col-4 {
+    .support_info {
+        padding: 0 0 0 24px;
+        margin-bottom: 200px;
+        height: auto;
+        border-left: 1px solid #dadada;
+        padding: 0 0 0 24px;
+        height: auto;
+    }
+
+    #support {
+        font-size: 18px;
+        color: #242424;
+        text-decoration: none;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    #support:hover {
+        text-decoration: underline;
+
+    }
+
+    #nintendo_switch,
+    #account,
+    #systems,
+    #repairs,
+    #recycling {
+        font-size: 16px;
+        text-decoration: none;
+        color: #e60012;
+        font-weight: 700;
+        margin-bottom: 50px;
+
+
+    }
+
+    #nintendo_switch:hover,
+    #account:hover,
+    #systems:hover,
+    #repairs:hover,
+    #recycling:hover {
+        text-decoration: underline;
+        color:rgb(129, 7, 7);
+    }
+}
+
+.col-5 {
+    .parents {
+        border-left: 1px solid #dadada;
+        padding: 0 0 0 24px;
+    }
+
+
+    #parent {
+        font-size: 18px;
+        color: #242424;
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    #parent:hover {
+        text-decoration: underline;
+    }
+
+    #info,
+    #parental {
+        font-size: 16px;
+        text-decoration: none;
+        color: #e60012;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    #info:hover,
+    #parental:hover {
+        text-decoration: underline;
+        color:rgb(129, 7, 7);
+    }
+
+    .privacy_info {
+        border-left: 1px solid #dadada;
+        padding: 0 0 0 24px;
+        margin-bottom: 200px;
+        height: auto;
+
+        #privacy {
+            font-size: 18px;
+            color: #242424;
+            text-decoration: none;
+            font-weight: 700;
+            margin-bottom: 50px;
+
+        }
+
+        #privacy:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    #policy,
+    #cookies {
+        font-size: 16px;
+        text-decoration: none;
+        color: #e60012;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    #policy:hover,
+    #cookies:hover {
+        text-decoration: underline;
+        color: rgb(129, 7, 7);
+    }
+
+}
+
+
+
+.col-6 {
+    .community_info {
+        border-left: 1px solid #dadada;
+        padding: 0 0 0 24px;
+        height: auto;
+        margin-bottom: auto;
+
+
+
+    }
+
+    #community {
+        font-size: 18px;
+        color: #242424;
+        text-decoration: none;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    #community:hover {
+        text-decoration: underline; 
+    }
+
+    #guidelines,
+    #safety {
+        font-size: 16px;
+        text-decoration: none;
+        color: #e60012;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    #guidelines:hover,
+    #safety:hover {
+        text-decoration: underline;
+        color: rgb(129, 7, 7);
+    }
+
+}
+
+
+.esrb_logo {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #242424;
+    color: white;
+
+    nav {
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                padding: 20px 20px;
+
+                a {
+                    color: inherit;
+                    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+                    transition: text-decoration-color 300ms;
+
+                    &:hover {
+                        text-decoration-color: rgba(255, 255, 255, 1);
                     }
                 }
             }
         }
-    
+    }
+}
