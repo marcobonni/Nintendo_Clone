@@ -107,7 +107,10 @@ body main .main_image section p, body main .online_store_section section p {
   display: inline-block;
   font-weight: bold;
   font-size: 28px;
-body main .main_image section a.preorder_button, body main .online_store_section section a.preorder_button {
+
+}
+body main .main_image section a.preorder_button {
+
   display: inline;
   background-color: rgb(255, 0, 0);
   color: white;
@@ -196,6 +199,273 @@ body .feature_section .card_container .card a .text_card span {
 .online_store_section p {
   font-size: 21px;
 }
+
+
+.navbar_socialmedia {
+  background-color: #e60012;
+  height: 120.234px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 16px 36px 16px;
+}
+.navbar_socialmedia .nin_logo-left {
+  justify-content: flex-start !important;
+  display: flex !important;
+  margin-left: 20px;
+}
+.navbar_socialmedia .social_icon a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  overflow: hidden;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 32px;
+}
+
+.footer_info {
+  padding: 16px;
+  display: flex;
+  margin: 20px 100px 100px 100px;
+  justify-content: space-between;
+}
+.footer_info .col-1 .about {
+  border-left: 1px solid #dadada;
+  padding: 0 0 0 24px;
+  margin-bottom: 200px;
+  height: auto;
+}
+.footer_info .col-1 #about_nintendo {
+  font-size: 18px;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.footer_info .col-1 #about_nintendo:hover {
+  text-decoration: underline;
+}
+.footer_info .col-1 #careers,
+.footer_info .col-1 #corporate {
+  font-size: 16px;
+  text-decoration: none;
+  color: #e60012;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.footer_info .col-1 #careers:hover,
+.footer_info .col-1 #corporate:hover {
+  text-decoration: underline;
+}
+
+.col-2 .shop_info {
+  border-left: 1px solid #dadada;
+  padding: 0 0 0 24px;
+  margin-bottom: 200px;
+  height: auto;
+}
+.col-2 #shop {
+  font-size: 18px;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-2 #shop:hover {
+  text-decoration: underline;
+}
+.col-2 #games,
+.col-2 #hardware,
+.col-2 #merchandise,
+.col-2 #sales,
+.col-2 #exclusives,
+.col-2 #online,
+.col-2 #store {
+  font-size: 16px;
+  text-decoration: none;
+  color: #e60012;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-2 #games:hover,
+.col-2 #hardware:hover,
+.col-2 #merchandise:hover,
+.col-2 #sales:hover,
+.col-2 #exclusives:hover,
+.col-2 #online:hover,
+.col-2 #store:hover {
+  text-decoration: underline;
+  color: rgb(129, 7, 7);
+}
+
+.col-3 .store_info {
+  padding: 0 0 0 24px;
+  margin-bottom: 200px;
+  height: auto;
+  border-left: 1px solid #dadada;
+  padding: 0 0 0 24px;
+  height: auto;
+}
+.col-3 #store {
+  font-size: 18px;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-3 #store:hover {
+  text-decoration: underline;
+}
+.col-3 #order,
+.col-3 #shipping,
+.col-3 #returns,
+.col-3 #faq {
+  font-size: 16px;
+  text-decoration: none;
+  color: #e60012;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-3 #order:hover,
+.col-3 #shipping:hover,
+.col-3 #returns:hover,
+.col-3 #faq:hover {
+  text-decoration: underline;
+  color: rgb(129, 7, 7);
+}
+
+.col-4 .support_info {
+  padding: 0 0 0 24px;
+  margin-bottom: 200px;
+  height: auto;
+  border-left: 1px solid #dadada;
+  padding: 0 0 0 24px;
+  height: auto;
+}
+.col-4 #support {
+  font-size: 18px;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-4 #support:hover {
+  text-decoration: underline;
+}
+.col-4 #nintendo_switch,
+.col-4 #account,
+.col-4 #systems,
+.col-4 #repairs,
+.col-4 #recycling {
+  font-size: 16px;
+  text-decoration: none;
+  color: #e60012;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-4 #nintendo_switch:hover,
+.col-4 #account:hover,
+.col-4 #systems:hover,
+.col-4 #repairs:hover,
+.col-4 #recycling:hover {
+  text-decoration: underline;
+  color: rgb(129, 7, 7);
+}
+
+.col-5 .parents {
+  border-left: 1px solid #dadada;
+  padding: 0 0 0 24px;
+}
+.col-5 #parent {
+  font-size: 18px;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+}
+.col-5 #parent:hover {
+  text-decoration: underline;
+}
+.col-5 #info,
+.col-5 #parental {
+  font-size: 16px;
+  text-decoration: none;
+  color: #e60012;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-5 #info:hover,
+.col-5 #parental:hover {
+  text-decoration: underline;
+  color: rgb(129, 7, 7);
+}
+.col-5 .privacy_info {
+  border-left: 1px solid #dadada;
+  padding: 0 0 0 24px;
+  margin-bottom: 200px;
+  height: auto;
+}
+.col-5 .privacy_info #privacy {
+  font-size: 18px;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-5 .privacy_info #privacy:hover {
+  text-decoration: underline;
+}
+.col-5 #policy,
+.col-5 #cookies {
+  font-size: 16px;
+  text-decoration: none;
+  color: #e60012;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-5 #policy:hover,
+.col-5 #cookies:hover {
+  text-decoration: underline;
+  color: rgb(129, 7, 7);
+}
+
+.col-6 .community_info {
+  border-left: 1px solid #dadada;
+  padding: 0 0 0 24px;
+  height: auto;
+  margin-bottom: auto;
+}
+.col-6 #community {
+  font-size: 18px;
+  color: #242424;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-6 #community:hover {
+  text-decoration: underline;
+}
+.col-6 #guidelines,
+.col-6 #safety {
+  font-size: 16px;
+  text-decoration: none;
+  color: #e60012;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.col-6 #guidelines:hover,
+.col-6 #safety:hover {
+  text-decoration: underline;
+  color: rgb(129, 7, 7);
+}
+
+.esrb_logo {
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 footer {
   display: flex;
