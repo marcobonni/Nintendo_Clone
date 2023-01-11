@@ -132,6 +132,7 @@ body {
                 justify-content: space-around;
                 align-items: center;
 
+
                 p {
                     color: #484848;
                     text-align: start;
@@ -166,6 +167,7 @@ body {
                         width: auto;
                     }
                 }
+
             }
         }
     }
@@ -293,6 +295,7 @@ body {
             font-weight: 700;
             margin-bottom: 50px;
         }
+
 
         #about_nintendo:hover {
             text-decoration: underline;
@@ -606,6 +609,7 @@ footer {
 
                     &:hover {
                         text-decoration-color: rgba(255, 255, 255, 1);
+
                     }
                 }
             }
