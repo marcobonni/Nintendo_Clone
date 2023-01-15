@@ -193,7 +193,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 // justify-content: space-around;
-                border: 1px solid #484848;
+                border: 1px solid rgb(72, 72, 72, 0.1);
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
 
@@ -252,8 +252,24 @@ body {
         p {
             font-size: 21px; //not working. viene sovrascritto da extend
         }
-}
     }
+    .gaming_systems_section {
+        @extend .main_image;
+        h1 {
+            font-size: 2.75rem;
+            color: #484848;
+            margin: 2rem;
+        }
+        a {
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            font-size: 21px;
+        }
+    }
+}
 
 
 .navbar_socialmedia {
