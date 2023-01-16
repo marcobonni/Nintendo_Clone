@@ -318,6 +318,7 @@ body {
 
         .digital_best_sellers_section {
             padding: 48px 0px;
+            border-bottom: rgb(72, 72, 72, 0.2) 1px solid;
             header {
                 display: flex;
                 align-items: center;
@@ -352,6 +353,9 @@ body {
                     // justify-content: space-around;
                     border: 1px solid rgb(72, 72, 72, 0.1);
                     border-radius: 10px;
+                    h1 {
+                        font-size: 16px;
+                    }
                     img {
                         border-top-left-radius: 10px;
                         border-top-right-radius: 10px;
@@ -359,7 +363,61 @@ body {
                         height: 100%;
                         width: 100%;
                         transition: transform 300ms;
+                        padding-bottom: 16px;
+                        &:hover {
+                            transform: translate(0px, -10px);
+                        }
+                    }
+                }
+            }
+        }
+        .digital_new_releases_section {
+            padding: 48px 0px;
+            header {
+                display: flex;
+                align-items: center;
 
+                h1 {
+                    font-size: 28px;
+                    padding: 0px 16px;
+                    margin: 0px 16px;
+                    border-right: 1px solid rgb(72, 72, 72, 0.1);
+                }
+
+                a {
+                    font-size: 16px;
+                    color: red;
+                    transition: 300ms;
+
+                    &:hover {
+                        color: rgb(100, 72, 72);
+                    }
+                }
+            }
+            .release_container {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 10px;
+                .card_release {
+                    height: 100%;
+                    margin: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+                    border: 1px solid rgb(72, 72, 72, 0.1);
+                    border-radius: 10px;
+                    h1 {
+                        font-size: 16px;
+                    }
+                    img {
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        box-sizing: content-box;
+                        height: 100%;
+                        width: 100%;
+                        transition: transform 300ms;
+                        padding-bottom: 16px;
                         &:hover {
                             transform: translate(0px, -10px);
                         }

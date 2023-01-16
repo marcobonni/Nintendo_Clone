@@ -243,6 +243,7 @@ body main .char_section .chars_section_container .char_card h2 {
 }
 body main .digital_best_sellers_section {
   padding: 48px 0px;
+  border-bottom: rgba(72, 72, 72, 0.2) 1px solid;
 }
 body main .digital_best_sellers_section header {
   display: flex;
@@ -276,6 +277,9 @@ body main .digital_best_sellers_section .sellers_container .card_sellers {
   border: 1px solid rgba(72, 72, 72, 0.1);
   border-radius: 10px;
 }
+body main .digital_best_sellers_section .sellers_container .card_sellers h1 {
+  font-size: 16px;
+}
 body main .digital_best_sellers_section .sellers_container .card_sellers img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -283,8 +287,59 @@ body main .digital_best_sellers_section .sellers_container .card_sellers img {
   height: 100%;
   width: 100%;
   transition: transform 300ms;
+  padding-bottom: 16px;
 }
 body main .digital_best_sellers_section .sellers_container .card_sellers img:hover {
+  transform: translate(0px, -10px);
+}
+body main .digital_new_releases_section {
+  padding: 48px 0px;
+}
+body main .digital_new_releases_section header {
+  display: flex;
+  align-items: center;
+}
+body main .digital_new_releases_section header h1 {
+  font-size: 28px;
+  padding: 0px 16px;
+  margin: 0px 16px;
+  border-right: 1px solid rgba(72, 72, 72, 0.1);
+}
+body main .digital_new_releases_section header a {
+  font-size: 16px;
+  color: red;
+  transition: 300ms;
+}
+body main .digital_new_releases_section header a:hover {
+  color: rgb(100, 72, 72);
+}
+body main .digital_new_releases_section .release_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+body main .digital_new_releases_section .release_container .card_release {
+  height: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(72, 72, 72, 0.1);
+  border-radius: 10px;
+}
+body main .digital_new_releases_section .release_container .card_release h1 {
+  font-size: 16px;
+}
+body main .digital_new_releases_section .release_container .card_release img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-sizing: content-box;
+  height: 100%;
+  width: 100%;
+  transition: transform 300ms;
+  padding-bottom: 16px;
+}
+body main .digital_new_releases_section .release_container .card_release img:hover {
   transform: translate(0px, -10px);
 }
 body .navbar_socialmedia {
