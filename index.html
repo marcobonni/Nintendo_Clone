@@ -9,10 +9,14 @@
     <link rel="icon" href="assets/nintendo-switch.ico">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="2.jpeg">
 </head>
 
 
 <body>
+
     <div class="header_wrapper">
         <header class="upper_header">
             <img class="logo" src="assets/logo.png" alt="nintendo" />
@@ -64,6 +68,16 @@
         </header>
     </div>
     <main>
+        <script>
+            function scrolll() {
+                var left = document.querySelector(".scroll_images");
+                left.scrollBy(-350, 0);
+            }
+            function scrollr() {
+                var right = document.querySelector(".scroll_images");
+                right.scrollBy(350, 0);
+            }
+        </script>
         <div class="main_image">
             <div class="image">
                 <a href=""><img
@@ -82,49 +96,114 @@
                 </a>
 
             </section>
+        </div> 
+
+<!--features-->
+
+        <div class="style_feature">
+            <h1>Features</h1>
         </div>
         <div class="feature_section">
-            <h1>Featured</h1>
-            <div class="card_container">
-                <div class="card">
-                    <a href="#">
-                        <img src="assets/new_year_sale.avif" alt="new_year_sale">
-                        <div class="text_card">
-                            <h3>Ends 1/15 at 11:59 p.m. PT</h3>
-                            <span>Nintendo Switch</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="assets/Scarlet_violet.avif" alt="Scarlet_violet">
-                        <div class="text_card">
-                            <h3>Pokémon Scarlet and Pokémon Violet-Learn More</h3>
-                            <span>Nintendo Switch</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="assets/splat3_tga.avif" alt="Splatoon">
-                        <div class="text_card">
-                            <h3>Splatoon 3-Available now</h3>
-                            <span>Nintendo Switch</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="assets/mario_kart.avif" alt="mario">
-                        <div class="text_card">
-                            <h3>Mario Kart 8 Deluxe DLC Wave 3-Available now</h3>
-                            <span>Nintendo Switch</span>
-                        </div>
 
-                    </a>
+            <div>
+                <button class="icon_btn" onclick="scrolll()"><i class="fas fa-angle-double-left"></i></button>
+            </div>
+            <div class="card_container">
+                <div class="scroll_images">
+                    <div class="card">
+                        <a href="#">
+                            <img src="assets/new_year_sale.avif" alt="new_year_sale">
+                            <div class="text_card">
+                                <h3>Ends 1/15 at 11:59 p.m. PT</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="assets/Scarlet_violet.avif" alt="Scarlet_violet">
+                            <div class="text_card">
+                                <h3>Pokémon Scarlet and Pokémon Violet-Learn More</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="assets/splat3_tga.avif" alt="Splatoon">
+                            <div class="text_card">
+                                <h3>Splatoon 3-Available now</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="assets/mario_kart.avif" alt="mario">
+                            <div class="text_card">
+                                <h3>Mario Kart 8 Deluxe DLC Wave 3-Available now</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/games/switch/f/fortnite-switch/hero"
+                                alt="fornite">
+                            <div class="text_card">
+                                <h3>Fortnite-Chapter 4 Season 1</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/dlc/switch-dlc/just-dance-dlc/rom-bundle/just-dance-2023-edition/image"
+                                alt="just dance">
+                            <div class="text_card">
+                                <h3>Just Dance 2023 Edition- Available now</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/games/switch/f/fall-guys-switch/hero"
+                                alt="season 3 sunken">
+                            <div class="text_card">
+                                <h3>Season 3-Sunken Treasures </h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/games/switch/c/crisis-core-final-fantasy-vii-reunion-switch/hero"
+                                alt="Crisis Core-final fantasy">
+                            <div class="text_card">
+                                <h3>Crisis Core -Final Fantasy VII- Reunion</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+
                 </div>
             </div>
+            <div>
+                <button class="icon_btn" onclick="scrollr()"><i class="fas fa-angle-double-right"></i></button>
+            </div>
         </div>
+
+<!--online store-->
         <div class="online_store_section">
             <div class="online_store_image">
                 <h1>Online Store</h1>
