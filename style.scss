@@ -180,8 +180,8 @@ body {
 
 
         .feature_section {
-            padding-top: 48px;
-            border-bottom: #484848 1px solid;
+            padding: 48px 0px;
+            border-bottom: rgb(72, 72, 72, 0.2) 1px solid;
 
             h1 {
                 font-size: 2.75rem;
@@ -202,8 +202,8 @@ body {
                     flex-direction: column;
                     // justify-content: space-around;
                     border: 1px solid rgb(72, 72, 72, 0.1);
-                    border-top-left-radius: 10px;
-                    border-top-right-radius: 10px;
+                    border-radius: 10px;
+                    
 
                     a {
                         text-decoration: none;
