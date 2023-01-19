@@ -266,6 +266,72 @@ body .gaming_systems_section a img {
 body .gaming_systems_section p {
   font-size: 21px;
 }
+body .section_news .container_news .boxright2_small, body .section_news .container_news .boxright_small, body .section_news .container_news .boxleft2_small, body .section_news .container_news .boxleft_small, body .section_news .container_news .box_2, body .section_news .container_news .box_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .section_news {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .section_news .container_news {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  height: 100vh;
+  gap: 30px;
+}
+body .section_news .container_news .box_1 {
+  grid-area: 1/2/span 3/span 2;
+}
+body .section_news .container_news .box_2 {
+  grid-area: 1/4/span 3/span 2;
+}
+body .section_news .container_news .boxleft_small {
+  grid-area: 4/3/span 2/span 1;
+}
+body .section_news .container_news .boxleft2_small {
+  grid-area: 4/2/span 2/span 1;
+}
+body .section_news .container_news .boxright_small {
+  grid-area: 4/4/span 2/span 1;
+}
+body .section_news .container_news .boxright2_small {
+  grid-area: 4/5/span 2/span 1;
+}
+body .section_news .img_secnews {
+  display: block;
+  width: 100%;
+}
+body .section_news .text_news {
+  color: rgba(41, 40, 40, 0.968);
+}
+body .section_news .date {
+  font-size: 10px;
+  color: rgba(77, 77, 77, 0.968);
+}
+body .section_news .link_news {
+  color: rgb(24, 24, 24);
+  text-decoration: none;
+}
+body .section_news .link_news:hover {
+  color: red;
+}
+body .section_news .a_read {
+  text-decoration: underline;
+  color: red;
+}
+body .section_news button {
+  background-color: red;
+}
+body .section_news button .news_button {
+  text-decoration: none;
+  color: white;
+}
 body .char_section {
   box-sizing: content-box;
   width: 100%;
