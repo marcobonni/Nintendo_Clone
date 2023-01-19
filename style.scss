@@ -183,6 +183,7 @@ body {
         }
 
         .style_feature {
+
             h1 {
                 font-size: 2.75rem;
                 color: #484848;
@@ -255,7 +256,6 @@ body {
                 border: 1px solid rgb(72, 72, 72, 0.1);
                 border-radius: 10px;
                 overflow: hidden; 
-                
 
                 a {
                     text-decoration: none;
@@ -343,7 +343,6 @@ body {
             font-size: 21px; //not working. viene sovrascritto da extend
         }
     }
-
     .gaming_systems_section {
         @extend .main_image;
 
@@ -896,4 +895,10 @@ footer {
             }
         }
     }
+
+
+
+
+
+
 }
