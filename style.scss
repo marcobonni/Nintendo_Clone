@@ -362,7 +362,102 @@ body {
             font-size: 21px;
         }
     }
+    %flex {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .section_news {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    
+        .container_news {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            justify-content: center;
+            height: 100vh;
+            gap: 30px;
+    
+    
+            .box_1 {
+                grid-area: 1 / 2 / span 3 / span 2;
+                @extend %flex;
+    
+            }
+    
+    
+            .box_2 {
+                grid-area: 1 / 4/ span 3 / span 2;
+                @extend %flex;
+    
+            }
+    
+            .boxleft_small{
+                grid-area: 4/ 3/ span 2 / span 1;
+                @extend %flex;
+    
+            }
+    
+            .boxleft2_small {
+                grid-area: 4/ 2 / span 2 / span 1;
+                @extend %flex;
+            }
+    
+            .boxright_small{
+                grid-area: 4 / 4 / span 2 / span 1;
+                @extend %flex;
+    
+            }
+    
+            .boxright2_small {
+                grid-area: 4 / 5 / span 2 / span 1;
+                @extend %flex;
+            }
+        }
+              
+    
+        .img_secnews {
+            display: block;
+            width: 100%;
 
+        }
+        .text_news{
+            color:rgba(41, 40, 40, 0.968); ;
+        }
+    
+        .date {
+            font-size: 10px;
+            color: rgba(77, 77, 77, 0.968);
+        }
+    
+        .link_news{
+            color: rgb(24, 24, 24);
+            text-decoration: none;
+    
+            &:hover {
+                color: red;
+            }
+        }
+    
+        .a_read {
+            text-decoration: underline;
+            color: red;
+        }
+    
+        button {
+            background-color: red;
+    
+           .news_button{
+            text-decoration: none;
+                color: white;
+            }
+        }
+    
+    }
     .char_section {
         box-sizing: content-box;
         width: 100%;
