@@ -9,14 +9,19 @@
     <link rel="icon" href="assets/nintendo-switch.ico">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a59b9b09ab.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="2.jpeg">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </head>
 
 
 <body>
+
     <div class="header_wrapper">
         <header class="upper_header">
             <img class="logo" src="assets/logo.png" alt="nintendo" />
             <input type="search" name="search_bar" placeholder="Search Games" />
+
             <select>
                 <option>All Categories</option>
                 <option>Games</option>
@@ -27,36 +32,41 @@
             </select>
             <nav>
                 <ul class="nav_links">
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Wish List</a></li>
-                    <li><a href="#">Cart</a></li>
-                    <li><a href="#">Log in / Sign up</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i> Support </a></li>
+
+                    <li><a href="#"><i class="fa-solid fa-heart"></i> Wish List</a></li>
+                    <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i> Log in / Sign up</a></li>
                 </ul>
             </nav>
         </header>
         <header class="lower_header">
             <nav>
                 <ul>
-                    <li>
+                    <li><i class="fa-solid fa-store"></i>
                         <select>
                             <option>My Nintendo Store</option>
                         </select>
                     </li>
-                    <li><a href="">Holiday Gift Guide</a></li>
-                    <li>
+                    <li><a href="">
+
+
+                            <i class="fa-solid fa-gift"></i> Holiday Gift Guide</a></li>
+                    <li> <i class="fa-solid fa-gamepad"></i>
                         <select>
                             <option>Games</option>
                         </select>
                     </li>
                     <li>
+                        <iconify-icon icon="mdi:nintendo-switch"></iconify-icon>
                         <select>
                             <option>Nintendo Switch</option>
                         </select>
                     </li>
-                    <li><a href="">News & Events</a></li>
-                    <li>
+                    <li><i class="fa-solid fa-message"></i> <a href="">News & Events</a></li>
+                    <li><i class="fa-solid fa-star"></i>
                         <select>
-                            <option>Play Nintendo</option>
+                            <option> Play Nintendo</option>
                         </select>
                     </li>
                 </ul>
@@ -64,6 +74,16 @@
         </header>
     </div>
     <main>
+        <script>
+            function scrolll() {
+                var left = document.querySelector(".scroll_images");
+                left.scrollBy(-350, 0);
+            }
+            function scrollr() {
+                var right = document.querySelector(".scroll_images");
+                right.scrollBy(350, 0);
+            }
+        </script>
         <div class="main_image">
             <div class="image">
                 <a href=""><img
@@ -83,48 +103,117 @@
 
             </section>
         </div>
-        <div class="feature_section">
-            <h1>Featured</h1>
-            <div class="card_container">
-                <div class="card">
-                    <a href="#">
-                        <img src="assets/new_year_sale.avif" alt="new_year_sale">
-                        <div class="text_card">
-                            <h3>Ends 1/15 at 11:59 p.m. PT</h3>
-                            <span>Nintendo Switch</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="assets/Scarlet_violet.avif" alt="Scarlet_violet">
-                        <div class="text_card">
-                            <h3>Pokémon Scarlet and Pokémon Violet-Learn More</h3>
-                            <span>Nintendo Switch</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="assets/splat3_tga.avif" alt="Splatoon">
-                        <div class="text_card">
-                            <h3>Splatoon 3-Available now</h3>
-                            <span>Nintendo Switch</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="assets/mario_kart.avif" alt="mario">
-                        <div class="text_card">
-                            <h3>Mario Kart 8 Deluxe DLC Wave 3-Available now</h3>
-                            <span>Nintendo Switch</span>
-                        </div>
 
-                    </a>
+        <!--features-->
+
+        <div class="style_feature">
+            <h1>Features</h1>
+        </div>
+        <div class="feature_section">
+
+            <div class="overlay">
+
+                <div class="overlay_left">
+                    <button class="icon_btn" onclick="scrolll()"><i class="fas fa-angle-double-left"></i></button>
+                </div>
+                <div class="overlay_right">
+                    <button class="icon_btn right-btn" onclick="scrollr()"><i class="fas fa-angle-double-right"></i></button>
+                </div> 
+                </div>
+            <div class="card_container">
+                <div class="scroll_images">
+                    <div class="card">
+                        <a href="#">
+                            <img src="assets/new_year_sale.avif" alt="new_year_sale">
+                            <div class="text_card">
+                                <h3>Ends 1/15 at 11:59 p.m. PT</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="assets/Scarlet_violet.avif" alt="Scarlet_violet">
+                            <div class="text_card">
+                                <h3>Pokémon Scarlet and Pokémon Violet-Learn More</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="assets/splat3_tga.avif" alt="Splatoon">
+                            <div class="text_card">
+                                <h3>Splatoon 3-Available now</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="assets/mario_kart.avif" alt="mario">
+                            <div class="text_card">
+                                <h3>Mario Kart 8 Deluxe DLC Wave 3-Available now</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/games/switch/f/fortnite-switch/hero"
+                                alt="fornite">
+                            <div class="text_card">
+                                <h3>Fortnite-Chapter 4 Season 1</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/dlc/switch-dlc/just-dance-dlc/rom-bundle/just-dance-2023-edition/image"
+                                alt="just dance">
+                            <div class="text_card">
+                                <h3>Just Dance 2023 Edition- Available now</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/games/switch/f/fall-guys-switch/hero"
+                                alt="season 3 sunken">
+                            <div class="text_card">
+                                <h3>Season 3-Sunken Treasures </h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/games/switch/c/crisis-core-final-fantasy-vii-reunion-switch/hero"
+                                alt="Crisis Core-final fantasy">
+                            <div class="text_card">
+                                <h3>Crisis Core -Final Fantasy VII- Reunion</h3>
+                                <span class="nintendo_switch">Nintendo Switch</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+
                 </div>
             </div>
+           
         </div>
+
+        <!--online store-->
         <div class="online_store_section">
             <div class="online_store_image">
                 <h1>Online Store</h1>
@@ -215,164 +304,239 @@
                     </div>
                 </div>
         
-                <button class="style_button"><a href="#" class="news_button">See all news articles</a></button>
+                <button class="preorder_button"><a href="#" class="news_button">See all news articles</a></button>
             </section>
 
                 
 
         </div>
-        <div class="char_section">
-            <h1>Characters</h1>
-            <div class="chars_section_container">
-                <div class="char_card">
-                    <a href=""><img src="assets/Char_Mario.avif" alt="Super Mario"></a>
-                    <h2>Super Mario</h2>
-                </div>
-                <div class="char_card">
-                    <a href=""><img src="assets/Zelda and Link.avif" alt="Zelda and Link"></a>
-                    <h2>The Legend of Zelda</h2>
-                </div>
-                <div class="char_card">
-                    <a href=""><img src="assets/Splatoon.avif" alt="Splatoon"></a>
-                    <h2>Splatoon</h2>
-                </div>
-                <div class="char_card">
-                    <a href=""><img src="assets/Kirby_Char.avif" alt="Kirby"></a>
-                    <h2>Kirby</h2>
-                </div>
-            </div>
+        <!--characters-->
+      
+        <div class="characters_title">
+            <h1> Characters</h1>
         </div>
-        <div class="digital_best_sellers_section">
-            <header>
-                <h1>Digital best sellers</h1>
-                <a href="#">See full list</a>
-            </header>
-            <div class="sellers_container">
-                <div class="card_sellers">
-                    <img src="assets/Hollow _Knight.avif" alt="Hollow Knight">
-                    <div class="title_card">
-                        <h1>Hollow Knight</h1>
-                    </div>
-                    <div class="release_date">
-                        06/12/2018
-                    </div>
-                    <div class="description_tag">
-                        Sale ends: 1/15/2023 PT
-                    </div>
-                    <div class="price_wrapper">
-                        <h1>$7.50</h1><span>$15.00</span><span class="price_tag">-50%</span>
-                    </div>
-                    <div class="platform">
-                        Nintendo Switch
-                    </div>
-                </div>
-                <div class="card_sellers">
-                    <img src="assets/stardew_valley.avif" alt="Stardew Valley">
-                    <div class="title_card">
-                        <h1>Stardew Valley</h1>
-                    </div>
-                    <div class="release_date">
-                        10/05/2017
-                    </div>
-                    <div class="description_tag">
 
-                    </div>
-                    <div class="price_wrapper">
-                        $14.99
-                    </div>
-                    <div class="platform">
-                        Nintendo Switch
-                    </div>
-                </div>
-                <div class="card_sellers">
-                    <img src="assets/hades.avif" alt="Hades">
-                    <div class="title_card">
-                        <h1>Hades</h1>
-                    </div>
-                    <div class="release_date">
-                        09/17/2020
-                    </div>
-                    <div class="description_tag">
+            <div class="char_section">
+               
+                <div class="chars_section_container">
+                    <div class="chars_container">
 
-                    </div>
-                    <div class="price_wrapper">
-                        $24.99
-                    </div>
-                    <div class="platform">
-                        Nintendo Switch
+                        <div class="char_card">
+                            <a href="" class="char_mario">
+                                <div class="background_image">
+                                    <img src="assets/supermario.jpeg">
+                                </div>
+
+                                <div class="char_img">
+                                    <img src="assets/Char_Mario.avif" alt="Super Mario">
+                                </div>
+                            </a>
+                            <h2>Super Mario &trade; </h2>
+
+                        </div>
+
+
+
+                        <div class="char_card">
+                            <a href="" class="char_zelda">
+                                <div class="background_image">
+                                    <img src="assets/slawek-fedorczuk-slawek-fedorczuk-artstation-landscapeb.jpeg">
+                                </div>
+                                <div class="char_img">
+                                    <img src="assets/Zelda and Link.avif" alt="Zelda and Link">
+                                </div>
+                            </a>
+                            <h2>The Legend of Zelda &trade;</h2>
+                        </div>
+
+                        <div class="char_card">
+                            <a href="" class="char_splatoon">
+                                <div class="background_image">
+                                    <img
+                                        src="assets/black-and-gray-wall-architecture-background-wallpaper-1280x720_45.jpeg">
+
+                                </div>
+                                <div class="char_img">
+                                    <img src="assets/Splatoon.avif" alt="Splatoon">
+                                </div>
+                            </a>
+                            <h2>Splatoon &trade;</h2>
+                        </div>
+
+                        <div class="char_card">
+                            <a href="" class="char_kirby">
+                                <div class="background_image">
+                                    <img src="assets/yellowkirby.jpeg" alt="kirby">
+                                </div>
+                                <div class="char_img">
+                                    <img src="assets/Kirby_Char.avif" alt="Kirby">
+
+                                </div>
+                            </a>
+                            <h2>Kirby &trade;</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="digital_new_releases_section">
-            <header>
-                <h1>Digital new releases</h1>
-                <a href="#">See full list</a>
-            </header>
-            <div class="release_container">
-                <div class="card_release">
-                    <img src="assets/sail_forth.avif" alt="Hollow Knight">
-                    <div class="title_card">
-                        <h1>Sail forth</h1>
-                    </div>
-                    <div class="release_date">
-                        12/2/2022
-                    </div>
-                    <div class="description_tag">
-                        Sale ends: 1/18/2023 PT
-                    </div>
-                    <div class="price_wrapper">
-                        <h1>$17.59</h1><span>$19.99</span><span class="price_tag">-12%</span>
-                    </div>
-                    <div class="platform">
-                        Nintendo Switch
-                    </div>
-                </div>
-                <div class="card_release">
-                    <img src="assets/sports_storry.avif" alt="Sports Story">
-                    <div class="title_card">
-                        <h1>Sports Story</h1>
-                    </div>
-                    <div class="release_date">
-                        12/23/2022
-                    </div>
-                    <div class="description_tag">
+        
+    </main>
+    <!--digital best sellers-->
 
-                    </div>
-                    <div class="price_wrapper">
-                        $14.99
-                    </div>
-                    <div class="platform">
-                        Nintendo Switch
-                    </div>
+    <div class="digital_best_sellers_section">
+        <header>
+            <h1>Digital best sellers</h1>
+            <a href="#">See full list</a>
+        </header>
+        <div class="sellers_container">
+            <div class="card_sellers">
+                <img src="assets/Hollow _Knight.avif" alt="Hollow Knight">
+                <div class="title_card">
+                    <h1>Hollow Knight</h1>
                 </div>
-                <div class="card_release">
-                    <img src="assets/melatonin.avif" alt="melatonin">
-                    <div class="title_card">
-                        <h1>Melatonin</h1>
-                    </div>
-                    <div class="release_date">
-                        12/22/2022
-                    </div>
-                    <div class="description_tag">
+                <div class="release_date">
+                    <p>06/12/2018</p>
+                </div>
+                <br>
+                <br>
+                <div class="description_tag">
+                    Sale ends: 1/15/2023 PT
+                </div>
+                <div class="price_wrapper">
+                    <h1>$7.50</h1><span>$15.00</span><span class="price_tag">-50%</span>
+                </div>
+                <br>
 
-                    </div>
-                    <div class="price_wrapper">
-                        $14.99
-                    </div>
-                    <div class="platform">
-                        Nintendo Switch
-                    </div>
+                <div class="platform">
+                    Nintendo Switch
+                    <i class="fa-regular fa-heart" style="color:red; float:right; margin-right: 20px;"></i></i>
+                </div>
+            </div>
+
+
+            <div class="card_sellers">
+                <img src="assets/stardew_valley.avif" alt="Stardew Valley">
+                <div class="title_card">
+                    <h1>Stardew Valley</h1>
+                </div>
+                <div class="release_date">
+                    10/05/2017
+                </div>
+                <div class="description_tag">
+
+                </div>
+                <br>
+                <br>
+                <div class="price_wrapper">
+                    $14.99
+                </div>
+                <br>
+                <br>
+                <div class="platform">
+                    Nintendo Switch
+                    <i class="fa-regular fa-heart" id="heart"
+                        style="color:red; float:right; margin-right: 20px;"></i></i>
+
+                </div>
+            </div>
+
+            <div class="card_sellers">
+                <img src="assets/hades.avif" alt="Hades">
+                <div class="title_card">
+                    <h1>Hades</h1>
+                </div>
+                <div class="release_date">
+                    09/17/2020
+                </div>
+                <div class="description_tag">
+
+                </div>
+                <br>
+                <br>
+
+                <div class="price_wrapper">
+                    $24.99
+                </div>
+                <br>
+                <br>
+                <div class="platform">
+                    Nintendo Switch
+                    <i class="fa-regular fa-heart" style="color:red; float:right; margin-right: 20px;"></i>
+
                 </div>
             </div>
         </div>
-        </div>
-        <div class="main_footer">
+    </div>
 
-        </div>
-        <div class="link_bar">
+    <!--digital new release section-->
+    <div class="digital_new_releases_section">
+        <header>
+            <h1>Digital new releases</h1>
+            <a href="#">See full list</a>
+        </header>
+        <div class="release_container">
+            <div class="card_release">
+                <img src="assets/sail_forth.avif" alt="Hollow Knight">
+                <div class="title_card">
+                    <h1>Sail forth</h1>
+                </div>
+                <div class="release_date">
+                    12/2/2022
+                </div>
+                <div class="description_tag">
+                    Sale ends: 1/18/2023 PT
+                </div>
+                <div class="price_wrapper">
+                    <h1>$17.59</h1><span>$19.99</span><span class="price_tag">-12%</span>
+                </div>
+                <div class="platform">
+                    Nintendo Switch
+                </div>
+            </div>
+            <div class="card_release">
+                <img src="assets/sports_storry.avif" alt="Sports Story">
+                <div class="title_card">
+                    <h1>Sports Story</h1>
+                </div>
+                <div class="release_date">
+                    12/23/2022
+                </div>
+                <div class="description_tag">
 
+                </div>
+                <div class="price_wrapper">
+                    $14.99
+                </div>
+                <div class="platform">
+                    Nintendo Switch
+                </div>
+            </div>
+            <div class="card_release">
+                <img src="assets/melatonin.avif" alt="melatonin">
+                <div class="title_card">
+                    <h1>Melatonin</h1>
+                </div>
+                <div class="release_date">
+                    12/22/2022
+                </div>
+                <div class="description_tag">
+
+                </div>
+                <div class="price_wrapper">
+                    $14.99
+                </div>
+                <div class="platform">
+                    Nintendo Switch
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
+    <div class="main_footer">
+
+    </div>
+    <div class="link_bar">
+
+    </div>
     </main>
     <!--Navbar social icon-->
     <div class="navbar_socialmedia">
