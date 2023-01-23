@@ -13,7 +13,7 @@ body {
 body .header_wrapper {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: white;
 }
 body .header_wrapper header.upper_header {
@@ -144,7 +144,7 @@ body main .style_feature h1 {
   margin: 2rem;
 }
 body main .feature_section {
-  margin: 100px;
+  margin: 200px;
   padding: 48px 0px;
   border-bottom: rgba(72, 72, 72, 0.2) 1px solid;
   width: 90%;
@@ -230,6 +230,16 @@ body main .feature_section .card .nintendo_switch {
   border-left: 2px solid rgb(200, 0, 0);
   padding: 5px;
 }
+body main .feature_section .overlay {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+}
+body main .feature_section .overlay_right {
+  position: absolute;
+  right: -1501px;
+}
 body main .feature_section .icon_btn {
   color: white;
   background-color: grey;
@@ -242,7 +252,7 @@ body main .feature_section .icon_btn {
   opacity: 0.5;
 }
 body main .feature_section .icon_btn:hover {
-  opacity: 1;
+  background-color: rgba(77, 77, 77, 0.968);
 }
 body .online_store_section h1 {
   font-size: 2.75rem;
