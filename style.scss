@@ -18,7 +18,7 @@ body {
     .header_wrapper {
         position: sticky;
         top: 0;
-        z-index: 2;
+        z-index: 3;
         background-color: white;
 
 
@@ -203,7 +203,7 @@ body {
         }
 
         .feature_section {
-            margin: 100px;
+            margin: 200px;
             padding: 48px 0px;
             border-bottom: rgb(72, 72, 72, 0.2) 1px solid;
             width: 90%;
@@ -311,6 +311,21 @@ body {
                 }
             }
 
+            .overlay {
+                position: absolute;
+                z-index: 2;
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+
+            .overlay_right {
+                position: absolute;
+                right: -1501px;
+
+            }
+
 
             .icon_btn {
                 color: white;
@@ -328,7 +343,7 @@ body {
             }
 
             .icon_btn:hover {
-                opacity: 1;
+            background-color:rgba(77, 77, 77, 0.968); 
 
             }
 
