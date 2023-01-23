@@ -626,13 +626,27 @@ body {
             color: red;
         }
 
-        button {
-            background-color: red;
+        .style_button {
+            display: inline;
+            padding: 1rem 2rem;
+            margin-left: 1rem;
+            transition: transform 0.5s;
+            background-color: rgb(255, 0, 0);
+            color: white;
+            font-weight: 700;
+            font-size: 1.125rem;
+            border-radius: 0.25rem;
+            border: 1px solid red;
+            
+            &:hover {
+                transform: scale(1.1);
+            }
 
             .news_button {
                 text-decoration: none;
                 color: white;
             }
+            
         }
 
     }
